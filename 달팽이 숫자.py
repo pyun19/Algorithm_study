@@ -27,8 +27,6 @@ for i in range(1, T+1):
             for x in range(n):
                 a[x_line][x+cnt] = res + 1
                 res = a[x_line][x+cnt]
-                if a[x_line][x+cnt] or a[x_line][x+cnt] != 0:
-                    continue
 
             for y in range(n-1):
                 a[y+1][y_line-cnt] = res + 1
