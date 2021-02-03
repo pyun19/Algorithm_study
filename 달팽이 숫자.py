@@ -1,6 +1,4 @@
 
-
-
 T = int(input())
 for i in range(1, T+1):
     print('#%d'%i)
@@ -16,23 +14,23 @@ for i in range(1, T+1):
     # a[0] = list(map(lambda x: x + 1, range(n)))
 
     # x는 가로 y는 세로
-    x_line = 0
-    y_line = -1
-    cnt = 0
-    res = 0
-    # _x_line = n
-    # _y_line = n
-    while True:
-        if res < m**2:
-            for x in range(n):
-                a[x_line][x+cnt] = res + 1
-                res = a[x_line][x+cnt]
-
-            for y in range(n-1):
-                a[y+1][y_line-cnt] = res + 1
-                res = a[y+1][y_line-cnt]
-
-            if res == m**2:
+    # x_line = 0
+    # y_line = -1
+    # cnt = 0
+    # res = 0
+    # # _x_line = n
+    # # _y_line = n
+    # while True:
+    #     if res < m**2:
+    #         for x in range(n):
+    #             a[x_line][x+cnt] = res + 1
+    #             res = a[x_line][x+cnt]
+    #
+    #         for y in range(n-1):
+    #             a[y+1][y_line-cnt] = res + 1
+    #             res = a[y+1][y_line-cnt]
+    #
+    #         if res == m**2:
                 break
 
             for _x in range(n-1,x_line,-1):
