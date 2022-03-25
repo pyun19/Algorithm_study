@@ -20,7 +20,7 @@ t = sorted([list(map(int, sys.stdin.readline().split()))
 start, end, cnt = t[0][0], t[0][1], 1
 for i in range(1, n):
     _start, _end = t[i][0], t[i][1]
-    #이전 회의 end시간보다 새로운 회의 start시간이 작다면 다음 회의 검사
+    # 이전 회의 end시간보다 새로운 회의 start시간이 작다면 다음 회의 검사
     if _start < end:
         continue
     start, end = _start, _end  # 조건이 충족되면 회의 count
